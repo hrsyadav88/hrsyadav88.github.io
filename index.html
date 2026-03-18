@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Yadav | Cybersecurity Professional</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        cyber: {
+                            dark: '#0a0f1a',
+                            card: '#111827',
+                            primary: '#06b6d4', // Cyan
+                            secondary: '#3b82f6', // Blue
+                            accent: '#10b981' // Emerald
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for a techy feel */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0f1a; }
+        ::-webkit-scrollbar-thumb { background: #06b6d4; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #0891b2; }
+        
+        .glass-panel {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(6, 182, 212, 0.2);
+        }
+        
+        .terminal-text {
+            border-right: 2px solid #06b6d4;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #06b6d4; }
+        }
+    </style>
+</head>
+<body class="bg-cyber-dark text-slate-300 font-sans antialiased selection:bg-cyber-primary selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-panel border-b-0 border-t-0 border-l-0 border-r-0 border-b border-cyber-primary/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 font-mono text-xl font-bold text-white tracking-tighter">
+                    <span class="text-cyber-primary">~/</span>HarshYadav<span class="text-cyber-primary animate-pulse">_</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8 text-sm font-mono">
+                        <a href="#about" class="hover:text-cyber-primary transition-colors duration-300">./About</a>
+                        <a href="#skills" class="hover:text-cyber-primary transition-colors duration-300">./Skills</a>
+                        <a href="#projects" class="hover:text-cyber-primary transition-colors duration-300">./Projects</a>
+                        <a href="#education" class="hover:text-cyber-primary transition-colors duration-300">./Education</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between min-h-[90vh]">
+        <div class="md:w-3/5 mt-10 md:mt-0">
+            <p class="font-mono text-cyber-primary mb-4">Initialising connection...</p>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight">
+                Harsh <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-primary to-cyber-secondary">Yadav</span>
+            </h1>
+            <h2 class="text-xl md:text-2xl font-mono text-slate-400 mb-6">
+                > Cybersecurity Professional & Analyst
+            </h2>
+            <p class="text-lg text-slate-400 mb-8 max-w-xl leading-relaxed">
+                Securing digital infrastructures, analyzing threats, and architecting robust defense systems. Currently pursuing an M.Sc. in Cybersecurity in Mumbai.
+            </p>
+            
+            <div class="flex flex-wrap gap-4">
+                <a href="mailto:hrsyadav88@gmail.com" class="px-6 py-3 bg-cyber-primary/10 border border-cyber-primary text-cyber-primary font-mono hover:bg-cyber-primary hover:text-cyber-dark transition-all duration-300 rounded flex items-center gap-2">
+                    <i class="ph ph-envelope-simple text-xl"></i> Contact Me
+                </a>
+                <a href="https://linkedin.com/in/harsh-yadav-754936183" target="_blank" class="px-6 py-3 glass-panel text-white font-mono hover:border-cyber-secondary transition-all duration-300 rounded flex items-center gap-2">
+                    <i class="ph ph-linkedin-logo text-xl"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+        
+        <div class="md:w-2/5 flex justify-center">
+            <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full p-2 border-2 border-dashed border-cyber-primary/50 animate-[spin_10s_linear_infinite]">
+                <!-- INSTRUCTION: Rename your AI image to profile.jpg and put it in the same folder -->
+                <img src="profile.jpg" alt="Harsh Yadav" class="rounded-full w-full h-full object-cover animate-[spin_10s_linear_infinite_reverse]" onerror="this.src='https://ui-avatars.com/api/?name=Harsh+Yadav&background=0a0f1a&color=06b6d4&size=400'">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-cyber-card/50 border-y border-cyber-primary/10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-8 font-mono flex items-center gap-3">
+                <i class="ph ph-user text-cyber-primary"></i> Whoami
+            </h2>
+            <div class="glass-panel p-8 rounded-lg relative overflow-hidden group">
+                <div class="absolute top-0 left-0 w-1 h-full bg-cyber-primary"></div>
+                <p class="text-lg leading-relaxed text-slate-300 mb-4">
+                    Hello, I'm Harsh Yadav. I am a dedicated cybersecurity professional currently pursuing my <strong>M.Sc. in Cybersecurity</strong> at the University of Mumbai. Building on a strong analytical foundation from my B.Sc. in Physics, I specialize in network security, threat detection, and building resilient security infrastructures.
+                </p>
+                <p class="text-lg leading-relaxed text-slate-300">
+                    My hands-on experience ranges from configuring secure network architectures to developing Python-driven security automation tools. I am a methodical problem-solver, passionate about analyzing complex security events and protecting digital environments. I am actively seeking roles in SOC operations, security analysis, or cybersecurity engineering where I can leverage my technical expertise to detect and mitigate advanced threats.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-white mb-12 font-mono flex items-center gap-3">
+            <i class="ph ph-terminal-window text-cyber-primary"></i> Technical_Arsenal
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Cybersecurity & Networking -->
+            <div class="glass-panel p-6 rounded-lg hover:border-cyber-primary/50 transition-colors duration-300">
+                <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2 border-b border-cyber-primary/20 pb-2">
+                    <i class="ph ph-shield-check text-cyber-primary"></i> Cyber & Network
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-cyber-dark border border-cyber-primary/30 rounded text-sm font-mono text-cyan-300">Network Security</span>
+                    <span class="px-3 py-1 bg-cyber-dark border border-cyber-primary/30 rounded text-sm font-mono text-cyan-300">IDS/IPS</span>
+                    <span class="px-3 py-1 bg-cyber-dark border border-cyber-primary/30 rounded text-sm font-mono text-cyan-300">Threat Detection</span>
+                    <span class="px-3 py-1 bg-cyber-dark border border-cyber-primary/30 rounded text-sm font-mono text-cyan-300">TCP/IP</span>
+                    <span class="px-3 py-1 bg-cyber-dark border border-cyber-primary/30 rounded text-sm font-mono text-cyan-300">VPNs & SDN</span>
+                    <span class="px-3 py-1 bg-cyber-dark border border-cyber-primary/30 rounded text-sm font-mono text-cyan-300">Ethical Hacking</span>
+                </div>
+            </div>
+
+            <!-- Security Tools -->
+            <div class="glass-panel p-6 rounded-lg hover:border-cyber-primary/50 transition-colors duration-300">
+                <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2 border-b border-cyber-primary/20 pb-2">
+                    <i class="ph ph-wrench text-cyber-primary"></i> Security Tools
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-cyber-dark border border-cyber-primary/30 rounded text-sm font-mono text-emerald-400">Wireshark</span>
+                    <span class="px-3 py-1 bg-cyber-dark border border-cyber-primary/30 rounded text-sm font-mono text-emerald-400">Nmap</span>
+                    <span class="px-3 py-1 bg-cyber-dark border border-cyber-primary/30 rounded text-sm font-mono text-emerald-400">Metasploit</span>
+                    <span class="px-3 py-1 bg-cyber-dark border border-cyber-primary/30 rounded text-sm font-mono text-emerald-400">Burp Suite</span>
+                    <span class="px-3 py-1 bg-cyber-dark border border-cyber-primary/30 rounded text-sm font-mono text-emerald-400">SIEM Tools</span>
+                    <span class="px-3 py-1 bg-cyber-dark border border-cyber-primary/30 rounded text-sm font-mono text-emerald-400">Kali Linux</span>
+                </div>
+            </div>
+
+            <!-- Programming & Analysis -->
+            <div class="glass-panel p-6 rounded-lg hover:border-cyber-primary/50 transition-colors duration-300">
+                <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2 border-b border-cyber-primary/20 pb-2">
+                    <i class="ph ph-code text-cyber-primary"></i> Coding & Analysis
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-cyber-dark border border-cyber-primary/30 rounded text-sm font-mono text-blue-400">Python</span>
+                    <span class="px-3 py-1 bg-cyber-dark border border-cyber-primary/30 rounded text-sm font-mono text-blue-400">Bash Scripting</span>
+                    <span class="px-3 py-1 bg-cyber-dark border border-cyber-primary/30 rounded text-sm font-mono text-blue-400">R Programming</span>
+                    <span class="px-3 py-1 bg-cyber-dark border border-cyber-primary/30 rounded text-sm font-mono text-blue-400">Pandas & NumPy</span>
+                    <span class="px-3 py-1 bg-cyber-dark border border-cyber-primary/30 rounded text-sm font-mono text-blue-400">Log Analysis</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-cyber-card/50 border-y border-cyber-primary/10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-12 font-mono flex items-center gap-3">
+                <i class="ph ph-folder-open text-cyber-primary"></i> Executed_Operations
+            </h2>
+
+            <div class="space-y-12">
+                <!-- Project 1 -->
+                <div class="glass-panel p-8 rounded-lg relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10">
+                        <i class="ph ph-shield-warning text-9xl text-white"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold text-white mb-2">Analyzing Modern IDS/IPS Architectures</h3>
+                        <p class="text-cyber-primary font-mono text-sm mb-6">Academic Research Project | 2024</p>
+                        
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div>
+                                <h4 class="text-white font-bold mb-2 flex items-center gap-2"><i class="ph ph-target text-cyber-secondary"></i> The Challenge</h4>
+                                <p class="text-sm text-slate-400">Traditional architectures struggle with high false positive rates, analyzing encrypted traffic, and detecting zero-day attacks, leading to SOC analyst fatigue.</p>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-2 flex items-center gap-2"><i class="ph ph-lightning text-cyber-secondary"></i> Action Taken</h4>
+                                <p class="text-sm text-slate-400">Evaluated APTs and explored the integration of AI-driven threat detection and Machine Learning models for behavioral anomaly detection.</p>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-2 flex items-center gap-2"><i class="ph ph-flag-checkered text-cyber-secondary"></i> Key Takeaway</h4>
+                                <p class="text-sm text-slate-400">Proposed a defense-in-depth strategy combining signature-based and behavioral detection, documenting actionable improvements for enterprise infrastructure.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-panel p-8 rounded-lg relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10">
+                        <i class="ph ph-file-code text-9xl text-white"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold text-white mb-2">Python Security Automation & Data Analysis</h3>
+                        <p class="text-cyber-primary font-mono text-sm mb-6">Security Engineering & Scripting</p>
+                        
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div>
+                                <h4 class="text-white font-bold mb-2 flex items-center gap-2"><i class="ph ph-target text-cyber-secondary"></i> The Challenge</h4>
+                                <p class="text-sm text-slate-400">Modern networks generate massive volumes of security logs. Manual processing is inefficient for identifying threat patterns and tracking real-time vulnerabilities.</p>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-2 flex items-center gap-2"><i class="ph ph-lightning text-cyber-secondary"></i> Action Taken</h4>
+                                <p class="text-sm text-slate-400">Engineered custom data pipelines using Python (Pandas, NumPy) and R to automate log parsing, perform statistical trend analysis, and quantify risks.</p>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-2 flex items-center gap-2"><i class="ph ph-flag-checkered text-cyber-secondary"></i> Key Takeaway</h4>
+                                <p class="text-sm text-slate-400">Successfully streamlined event monitoring, transforming raw log data into readable metrics and drastically reducing manual overhead for threat identification.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="glass-panel p-8 rounded-lg relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10">
+                        <i class="ph ph-activity text-9xl text-white"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold text-white mb-2">Network Security Implementation & Pen-Testing</h3>
+                        <p class="text-cyber-primary font-mono text-sm mb-6">Infrastructure Defense</p>
+                        
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div>
+                                <h4 class="text-white font-bold mb-2 flex items-center gap-2"><i class="ph ph-target text-cyber-secondary"></i> The Challenge</h4>
+                                <p class="text-sm text-slate-400">Networks require layered defenses to prevent intrusion while maintaining connectivity. Proactive vulnerability identification is critical.</p>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-2 flex items-center gap-2"><i class="ph ph-lightning text-cyber-secondary"></i> Action Taken</h4>
+                                <p class="text-sm text-slate-400">Designed secure architectures, performed deep-packet traffic analysis with Wireshark, implemented VPNs/SDNs, and conducted penetration testing exercises.</p>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-2 flex items-center gap-2"><i class="ph ph-flag-checkered text-cyber-secondary"></i> Key Takeaway</h4>
+                                <p class="text-sm text-slate-400">Solidified ability to build secure network infrastructures and proactively attack/defend them to remediate vulnerabilities before exploitation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section id="education" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-white mb-12 font-mono flex items-center gap-3">
+            <i class="ph ph-graduation-cap text-cyber-primary"></i> Training_&_Academia
+        </h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Education -->
+            <div>
+                <h3 class="text-xl font-bold text-white mb-6 border-b border-cyber-primary/20 pb-2">Academic Degrees</h3>
+                
+                <div class="mb-8 relative pl-6 border-l-2 border-cyber-primary/30">
+                    <div class="absolute w-3 h-3 bg-cyber-primary rounded-full -left-[7px] top-1.5 shadow-[0_0_10px_#06b6d4]"></div>
+                    <h4 class="text-lg font-bold text-white">Master of Science in Cybersecurity</h4>
+                    <p class="text-cyber-primary font-mono text-sm mb-2">University of Mumbai, Kalina | Aug 2024 - Present</p>
+                    <p class="text-sm text-slate-400">Specialization in Network Security, Threat Detection, and Security Infrastructure.</p>
+                </div>
+
+                <div class="relative pl-6 border-l-2 border-cyber-primary/30">
+                    <div class="absolute w-3 h-3 bg-cyber-secondary rounded-full -left-[7px] top-1.5"></div>
+                    <h4 class="text-lg font-bold text-white">Bachelor of Science in Physics</h4>
+                    <p class="text-cyber-primary font-mono text-sm mb-2">Bhavan's College, Mumbai | Jul 2021 - Mar 2024</p>
+                    <p class="text-sm text-slate-400">Graduated with a CGPA of 8.38/10. Developed strong analytical and quantitative problem-solving skills.</p>
+                </div>
+            </div>
+
+            <!-- Certs -->
+            <div>
+                <h3 class="text-xl font-bold text-white mb-6 border-b border-cyber-primary/20 pb-2">Certifications</h3>
+                
+                <div class="glass-panel p-6 rounded-lg border border-cyber-primary/30">
+                    <div class="flex items-start gap-4">
+                        <div class="p-3 bg-cyber-dark rounded-lg">
+                            <i class="ph ph-certificate text-3xl text-emerald-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-white">Cybersecurity Analyst Job Simulation</h4>
+                            <p class="text-cyber-primary font-mono text-sm mb-3">Tata Group | Forage</p>
+                            <ul class="text-sm text-slate-400 list-disc list-inside space-y-1">
+                                <li>Completed industry-aligned simulation covering SOC operations and incident response.</li>
+                                <li>Gained practical experience in threat detection and security incident investigation.</li>
+                                <li>Applied cybersecurity frameworks in real-world scenarios.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-cyber-card border-t border-cyber-primary/20 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-slate-500 font-mono text-sm mb-4">
+                <i class="ph ph-terminal"></i> root@harsh-yadav:~# exit
+            </p>
+            <p class="text-slate-400 text-sm">
+                &copy; <script>document.write(new Date().getFullYear())</script> Harsh Yadav. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
